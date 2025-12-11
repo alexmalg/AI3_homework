@@ -1,0 +1,22 @@
+{
+  "name": "ai3_homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "pytest tests/unit/ -v",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --spec 'cypress/e2e/translator_critic.cy.js'",
+    "cypress:run:headless": "cypress run --headless --spec 'cypress/e2e/translator_critic.cy.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "cypress": "^15.7.1"
+  }
+}
